@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>#{tituloPagina}</title>
+        <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="css/print.css"  type="text/css" rel="stylesheet" media="print"/>
+    </h:head>
+    <h:body>
+        <body>
+            <!-- Layout stránek -->
+            <div id="layout">
+
+                <!-- Hlavička -->
+                <div id="header">
+
+                    <h1 id="logo"><a href="/" title="Nature Theme">Historia ambiental del humedal Tibanica</a></h1>
+                    <hr class="noscreen" />   
+
+
+                    <!-- Rychlá navigace -->
+                    <p class="noscreen noprint">
+                        <em>Rychlá navigace: <a href="#obsah">obsah</a>, <a href="#nav">navigace</a>.</em>
+                    </p>
+
+                </div>
+                <!-- end/ Hlavička -->
+
+                <hr class="noscreen" />
+
+                <!-- Hlavní navigace -->
+                <div id="nav" class="box">
+                    <ul>
+                        <li id="#{activo.equals('1') ? 'active' : ''}"><a href="#{request.contextPath}/faces/index.xhtml">inicio</a></li>
+                        <li id="#{activo.equals('2') ? 'active' : ''}"><a href="#{request.contextPath}/faces/socioecologico.xhtml">Socioecológico</a></li>
+                        <li id="#{activo.equals('3') ? 'active' : ''}"><a href="#{request.contextPath}/faces/biodiversidad.xhtml">Biodiversidad</a></li>
+                        <li id="#{activo.equals('4') ? 'active' : ''}"><a href="#{request.contextPath}/faces/cartografia.xhtml">Cartografia</a></li>
+                        <li id="#{activo.equals('5') ? 'active' : ''}"><a href="#{request.contextPath}/faces/biblioteca.xhtml">Biblioteca</a></li>
+                        <li id="#{activo.equals('6') ? 'active' : ''}"><a href="#{request.contextPath}/faces/comic.xhtml">Comic</a></li>
+                        <li id="#{activo.equals('7') ? 'active' : ''}"><a href="#{request.contextPath}/faces/nosotros.xhtml">Nosotros</a></li>
+                        <li id="#{activo.equals('8') ? 'active' : ''}"><a href="#{request.contextPath}/faces/paginasamigas.xhtml">Páginas amigas</a></li>
+                        <li id="#{activo.equals('9') ? 'active' : ''}"><a href="#{request.contextPath}/faces/visitahumedal.xhtml">Visita humedal</a></li>
+                    </ul>
+                    <hr class="noscreen" />
+                </div> 
+                <!-- end/ Hlavní navigace -->
+
+                <div id="container" class="box">
+
+                    <ui:insert name="contenido">
+
+                    </ui:insert>
+
+                </div>
+
+                <div id="footer" class="shadow">
+                    <div class="f-left">Copyright © 2017 <a href="#">Sergio Hernando Álvarez</a></div>
+                    <div class="f-right">Designed by <a href="http://www.davidkohout.cz">David Kohout</a> | Our tip: <a title="spodní prádlo" href="http://www.spodnipradlo.org/">Spodni pradlo</a></div>
+                </div>
+            </div>
+            <!-- end/ Layout stránek -->
+        </body>
+    </h:body>
+</html>
+

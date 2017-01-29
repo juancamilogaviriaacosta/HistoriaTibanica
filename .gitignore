@@ -9,3 +9,5 @@
 
 # Ignore all logfiles and tempfiles.
 /build
+/dist/
+/src/java/co/com/sergio/propiedades.properties

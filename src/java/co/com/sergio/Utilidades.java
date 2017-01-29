@@ -14,7 +14,7 @@ public class Utilidades {
 
     public static String getAbsoluteSrcPath() {
         URL url = Utilidades.class.getResource("Utilidades.class");
-        File f = new File(url.getPath()).getParentFile().getParentFile().getParentFile().getParentFile().getParentFile();
+        File f = new File(url.getPath()).getParentFile();
         String srcPath = f.getAbsolutePath().replaceAll("%20", " ");
         return srcPath;
     }

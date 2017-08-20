@@ -11,38 +11,68 @@
     <ui:param name="activo" value="4"/>
 
     <ui:define name="contenido">
-
-        <div id="intro">
-            <div id="intro-in">
-                <p class="intro">
-
-                </p>
-            </div>
-        </div>
         <div id="obsah" class="content box">
             <div class="in">
-                <h:form>
-                    <script type="text/javascript" src="http://www.google.com/jsapi?key=#{visitaHumedalControlador.claveMapa}"></script>
-
-                    <!-- Codigo de ejemplo -->
-                    <script type="text/javascript">
-                        //<![CDATA[  
-                        google.load('maps', '2', {callback: simple});
-                        var map;
-                        function simple() {
-                            if (GBrowserIsCompatible()) {
-                                var map = new GMap2(document.getElementById("map1"));
-                                map.setCenter(new GLatLng(4.6018195, -74.2044159), 16);
-                            }
-                        }
-                        window.onload = function () {
-                            simple();
-                        }
-                        //]]>
-                    </script>
-                    <div id="map1" style="width:100%; height:240px;"></div>
-
-                </h:form>
+                <h3>Cartografia</h3>
+                <div class="fluid_container">
+                    <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                        <div data-thumb="img/cartografia/cc1.jpg" data-src="img/cartografia/c1.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c1.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc2.jpg" data-src="img/cartografia/c2.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c2.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc3.jpg" data-src="img/cartografia/c3.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c3.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc4.jpg" data-src="img/cartografia/c4.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c4.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc5.jpg" data-src="img/cartografia/c5.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c5.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc6.jpg" data-src="img/cartografia/c6.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c6.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc7.jpg" data-src="img/cartografia/c7.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c7.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc8.jpg" data-src="img/cartografia/c8.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c8.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                        <div data-thumb="img/cartografia/cc9.jpg" data-src="img/cartografia/c9.jpg">
+                            <div class="camera_caption fadeFromBottom">
+                                Cartografia participativa humedal Tibanica
+                                &nbsp;<a href="img/cartografia/c9.jpg">Pantalla completa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both; display:block; height:100px"></div>
             </div>
         </div>
     </ui:define>

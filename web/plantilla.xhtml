@@ -6,7 +6,68 @@
     <h:head>
         <title>#{tituloPagina}</title>
         <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
-        <link href="css/print.css"  type="text/css" rel="stylesheet" media="print"/>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        //		Styles
+        //
+        ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+        <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'/> 
+        <style>
+            body {
+                    margin: 0;
+                    padding: 0;
+            }
+            a {
+                    color: #09f;
+            }
+            a:hover {
+                    text-decoration: none;
+            }
+            #back_to_camera {
+                    clear: both;
+                    display: block;
+                    height: 80px;
+                    line-height: 40px;
+                    padding: 20px;
+            }
+            .fluid_container {
+                    margin: 0 auto;
+                    max-width: 1000px;
+                    width: 90%;
+            }
+        </style>
+
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+        //
+        //		Scripts
+        //
+        ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+
+        <script type='text/javascript' src='scripts/jquery.min.js'></script>
+        <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+        <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+        <script type='text/javascript' src='scripts/camera.min.js'></script> 
+
+        <script>
+            jQuery(function(){
+
+                    jQuery('#camera_wrap_1').camera({
+                            thumbnails: true
+                    });
+
+                    jQuery('#camera_wrap_2').camera({
+                            height: '400px',
+                            loader: 'bar',
+                            pagination: false,
+                            thumbnails: true
+                    });
+            });
+        </script>
+        
     </h:head>
     <h:body>
         <body>
